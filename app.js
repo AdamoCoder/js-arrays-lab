@@ -31,13 +31,10 @@ Exercise 3: Insert at the beginning
 
 Complete Exercise 3 in the space below:
 */
-/*
-foods = ['pizza', 'cheeseburger'];
-foods.push('taco')
 
-console.log('taco', foods);
-console.log('pizsa', foods);
-console.log('cheeseburger', foods);
+foods.unshift('taco')
+
+console.log('exercise 3', foods);
 
 /*
 Exercise 4: Access an array element
@@ -86,13 +83,7 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
- foods = ['taco', 'sushi', 'cupcake', 'tofu', 'cheeseburger'];
-
-console.log('taco', foods);
-console.log('sushi', foods);
-console.log('cupcake', foods);
-console.log('tofu', foods);
-console.log('cheeseburger', foods);
+// ;
 
 /*
 Exercise 7: Using the `slice()` method
