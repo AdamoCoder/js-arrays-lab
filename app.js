@@ -22,7 +22,7 @@ Complete Exercise 2 in the space below:
 
 foods.push('pizza', 'cheeseburger')
 
-console.log(foods);
+console.log('exercise 2', foods);
 
 /*
 Exercise 3: Insert at the beginning
@@ -46,16 +46,9 @@ Exercise 4: Access an array element
 
 Complete Exercise 4 in the space below:
 */
-/*
-foods = ['taco', 'pizza', 'cheeseburger'];
-
-console.log('taco', foods);
-console.log('pizsa', foods);
-console.log('cheeseburger', foods);
-
-const favFood = ['pizza']
-console.log(1, 'pizza', favFood);
-
+const index = 1;
+const favFood = foods[1]
+console.log('exercise 4', favFood)
 /*
 Exercise 5: Insert an element between two others
 
@@ -63,17 +56,10 @@ Exercise 5: Insert an element between two others
 
 Complete Exercise 5 in the space below:
 */
-
-//  foods = ['taco', 'pizza', 'tofu', 'cheeseburger'];
-
-// console.log('taco', foods);
-// console.log('pizsa', foods);
-// console.log('tofu', foods);
-// console.log('cheeseburger', foods);
-
-// const favFood = ['pizza']
-// console.log(1, 'pizza', favFood);
-
+foods.splice(2, 0, 'tofu')
+console.log('exercise 5', foods)
+// foods[2] = 'tofu'; this is deleting cheeseburger and replacing it with tofu
+// console.log('exercise 5', foods)
 
 /*
 Exercise 6: Replace elements
@@ -83,7 +69,8 @@ Exercise 6: Replace elements
 Complete Exercise 6 in the space below:
 */
 
-// ;
+foods.splice(1, 1, 'sushi', 'cupcake');
+console.log('exercise 6', foods)
 
 /*
 Exercise 7: Using the `slice()` method
@@ -95,10 +82,8 @@ Exercise 7: Using the `slice()` method
 
 Complete Exercise 7 in the space below:
 */
-
-
-
-console.log('Exercise 7 result:', yummy);
+const yummy = foods.slice(1, 3);
+console.log('Exercise 7', yummy);
 
 /*
 Exercise 8: Finding an index
@@ -111,9 +96,8 @@ Exercise 8: Finding an index
 Complete Exercise 8 in the space below:
 */
 
-
-
-console.log('Exercise 8 result:', soyIdx);
+const soyIdx = foods.slice(3,4)
+console.log('Exercise 8', soyIdx);
 
 /*
 Exercise 9: Joining elements
@@ -129,7 +113,7 @@ Note: The final result should log as:
 Complete Exercise 9 in the space below:
 */
 
-
+const allFoods = foods.join('->');
 
 console.log('Exercise 9 result:', allFoods);
 
@@ -144,7 +128,7 @@ Exercise 10: Check for an element
 Complete Exercise 10 in the space below:
 */
 
-
+const hasSoup = foods.includes('soups');
 
 console.log('Exercise 10 result:', hasSoup);
 
@@ -161,7 +145,6 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
-
 
 
 console.log('Exercise 11 result:', odds);
